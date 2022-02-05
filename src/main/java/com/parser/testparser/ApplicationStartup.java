@@ -30,7 +30,7 @@ public class ApplicationStartup implements ApplicationListener<ApplicationReadyE
     public void onApplicationEvent(final ApplicationReadyEvent event) {
 
         String fileNameForParsing = "";
-//        String test = "https://www.simbirsoft.com/"; //test*******************************************
+//      Пример входных данных: "https://www.simbirsoft.com/";
 
         log.debug("Считываем с консоли адрес web - страницы.");
         System.out.println("Введите адрес web - страницы для парсинга: ");

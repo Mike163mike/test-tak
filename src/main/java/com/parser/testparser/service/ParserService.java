@@ -16,12 +16,12 @@ import java.util.*;
 public class ParserService {
 
     public Map<String, Integer> getStatistic(String string) {
-        String parsingPage = parsingPage(string);
+        String parsingPage = parsePage(string);
         List<String> words = makeListFromString(parsingPage);
         return calculateStatistic(words);
     }
 
-    private String parsingPage(String fileName) {
+    private String parsePage(String fileName) {
         log.debug("Пробуем распарсить HTML - документ (web -страницу с URL: " + fileName);
         try {
             Document document = Jsoup.connect(fileName).userAgent("Mozilla/5.0 (Windows NT 10.0; Win64; x64)").get();
