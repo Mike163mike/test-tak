@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost/test_parser
+    username: postgres
+    password: root
+#  jpa:
+#    hibernate:
+#      ddl-auto: create-drop
+#    show-sql: true
+
+logging:
+  level:
+    com.parser: DEBUG
+  file:
+    name: application.log
